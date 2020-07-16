@@ -13,6 +13,11 @@
 		C607E4EF24BACC820086B7CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C607E4EE24BACC820086B7CB /* Preview Assets.xcassets */; };
 		C607E4FA24BACC820086B7CB /* WidgetTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607E4F924BACC820086B7CB /* WidgetTestTests.swift */; };
 		C607E50524BACC820086B7CB /* WidgetTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607E50424BACC820086B7CB /* WidgetTestUITests.swift */; };
+		C607E51924BACC9C0086B7CB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C607E51824BACC9C0086B7CB /* WidgetKit.framework */; };
+		C607E51B24BACC9C0086B7CB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C607E51A24BACC9C0086B7CB /* SwiftUI.framework */; };
+		C607E51E24BACC9C0086B7CB /* TimelineWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607E51D24BACC9C0086B7CB /* TimelineWidget.swift */; };
+		C607E52024BACC9E0086B7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C607E51F24BACC9E0086B7CB /* Assets.xcassets */; };
+		C607E52424BACC9E0086B7CB /* TimelineWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C607E51624BACC9C0086B7CB /* TimelineWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +35,28 @@
 			remoteGlobalIDString = C607E4E324BACC800086B7CB;
 			remoteInfo = WidgetTest;
 		};
+		C607E52224BACC9E0086B7CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C607E4DC24BACC800086B7CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C607E51524BACC9C0086B7CB;
+			remoteInfo = TimelineWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C607E52824BACC9E0086B7CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C607E52424BACC9E0086B7CB /* TimelineWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C607E4E424BACC800086B7CB /* WidgetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +71,12 @@
 		C607E50024BACC820086B7CB /* WidgetTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C607E50424BACC820086B7CB /* WidgetTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTestUITests.swift; sourceTree = "<group>"; };
 		C607E50624BACC820086B7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C607E51624BACC9C0086B7CB /* TimelineWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimelineWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C607E51824BACC9C0086B7CB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C607E51A24BACC9C0086B7CB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C607E51D24BACC9C0086B7CB /* TimelineWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineWidget.swift; sourceTree = "<group>"; };
+		C607E51F24BACC9E0086B7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C607E52124BACC9E0086B7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +101,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C607E51324BACC9C0086B7CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C607E51B24BACC9C0086B7CB /* SwiftUI.framework in Frameworks */,
+				C607E51924BACC9C0086B7CB /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +119,8 @@
 				C607E4E624BACC800086B7CB /* WidgetTest */,
 				C607E4F824BACC820086B7CB /* WidgetTestTests */,
 				C607E50324BACC820086B7CB /* WidgetTestUITests */,
+				C607E51C24BACC9C0086B7CB /* TimelineWidget */,
+				C607E51724BACC9C0086B7CB /* Frameworks */,
 				C607E4E524BACC800086B7CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +131,7 @@
 				C607E4E424BACC800086B7CB /* WidgetTest.app */,
 				C607E4F524BACC820086B7CB /* WidgetTestTests.xctest */,
 				C607E50024BACC820086B7CB /* WidgetTestUITests.xctest */,
+				C607E51624BACC9C0086B7CB /* TimelineWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +174,25 @@
 			path = WidgetTestUITests;
 			sourceTree = "<group>";
 		};
+		C607E51724BACC9C0086B7CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C607E51824BACC9C0086B7CB /* WidgetKit.framework */,
+				C607E51A24BACC9C0086B7CB /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C607E51C24BACC9C0086B7CB /* TimelineWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C607E51D24BACC9C0086B7CB /* TimelineWidget.swift */,
+				C607E51F24BACC9E0086B7CB /* Assets.xcassets */,
+				C607E52124BACC9E0086B7CB /* Info.plist */,
+			);
+			path = TimelineWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +203,12 @@
 				C607E4E024BACC800086B7CB /* Sources */,
 				C607E4E124BACC800086B7CB /* Frameworks */,
 				C607E4E224BACC800086B7CB /* Resources */,
+				C607E52824BACC9E0086B7CB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C607E52324BACC9E0086B7CB /* PBXTargetDependency */,
 			);
 			name = WidgetTest;
 			productName = WidgetTest;
@@ -186,6 +251,23 @@
 			productReference = C607E50024BACC820086B7CB /* WidgetTestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C607E51524BACC9C0086B7CB /* TimelineWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C607E52524BACC9E0086B7CB /* Build configuration list for PBXNativeTarget "TimelineWidgetExtension" */;
+			buildPhases = (
+				C607E51224BACC9C0086B7CB /* Sources */,
+				C607E51324BACC9C0086B7CB /* Frameworks */,
+				C607E51424BACC9C0086B7CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimelineWidgetExtension;
+			productName = TimelineWidgetExtension;
+			productReference = C607E51624BACC9C0086B7CB /* TimelineWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +288,9 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = C607E4E324BACC800086B7CB;
 					};
+					C607E51524BACC9C0086B7CB = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = C607E4DF24BACC800086B7CB /* Build configuration list for PBXProject "WidgetTest" */;
@@ -224,6 +309,7 @@
 				C607E4E324BACC800086B7CB /* WidgetTest */,
 				C607E4F424BACC820086B7CB /* WidgetTestTests */,
 				C607E4FF24BACC820086B7CB /* WidgetTestUITests */,
+				C607E51524BACC9C0086B7CB /* TimelineWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +335,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C607E51424BACC9C0086B7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C607E52024BACC9E0086B7CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +374,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C607E51224BACC9C0086B7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C607E51E24BACC9C0086B7CB /* TimelineWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +394,11 @@
 			isa = PBXTargetDependency;
 			target = C607E4E324BACC800086B7CB /* WidgetTest */;
 			targetProxy = C607E50124BACC820086B7CB /* PBXContainerItemProxy */;
+		};
+		C607E52324BACC9E0086B7CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C607E51524BACC9C0086B7CB /* TimelineWidgetExtension */;
+			targetProxy = C607E52224BACC9E0086B7CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +522,7 @@
 		C607E50A24BACC820086B7CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,6 +544,7 @@
 		C607E50B24BACC820086B7CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +643,46 @@
 			};
 			name = Release;
 		};
+		C607E52624BACC9E0086B7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimelineWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kagehito.WidgetTest.TimelineWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C607E52724BACC9E0086B7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimelineWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kagehito.WidgetTest.TimelineWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,6 +718,15 @@
 			buildConfigurations = (
 				C607E51024BACC820086B7CB /* Debug */,
 				C607E51124BACC820086B7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C607E52524BACC9E0086B7CB /* Build configuration list for PBXNativeTarget "TimelineWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C607E52624BACC9E0086B7CB /* Debug */,
+				C607E52724BACC9E0086B7CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
